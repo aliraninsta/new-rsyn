@@ -1,0 +1,525 @@
+<!-- RSYN Commercial — index.ver23.0 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RSYN Commercial L.L.C | Energy &amp; Commodity Trading</title>
+<link rel="icon" href="favicon.ico">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RSYN COMMERCIAL L.L.C">
+<meta property="og:title" content="RSYN COMMERCIAL L.L.C | Energy &amp; Commodity Trading">
+<meta property="og:description" content="Connecting energy flows, petroleum products, and cross-border commercial trade solutions across the Persian Gulf, Asia, and the Mediterranean.">
+<meta property="og:image" content="og-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RSYN COMMERCIAL L.L.C | Energy &amp; Commodity Trading">
+<meta name="twitter:description" content="Connecting energy flows and trade corridors across the Persian Gulf, Asia, and the Mediterranean.">
+<meta name="twitter:image" content="og-preview.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:      #EDE7DA;
+    --ink-dim:  #9AA3AE;
+    --ink-faint:#5E6774;
+    --bg:       #0D1218;
+    --bg-2:     #121924;
+    --bg-3:     #17202B;
+    --line:     #263140;
+    --bronze:   #CC9933;
+    --bronze-dim: #A47B2D;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Plus Jakarta Sans',sans-serif;
+    font-weight:400;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  .serif{font-family:'Cormorant Garamond',serif;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 40px;}
+  @media(max-width:640px){.wrap{padding:0 22px;}}
+
+  /* ---- header ---- */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    background:transparent;
+    backdrop-filter:none;
+    border-bottom:1px solid transparent;
+    transition:background .3s ease, backdrop-filter .3s ease, border-color .3s ease;
+  }
+  header.scrolled{
+    background:rgba(13,18,24,0.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-row{
+    display:flex;align-items:center;justify-content:space-between;
+    height:78px;
+  }
+  .mark{display:flex;align-items:center;gap:12px;}
+  .logo-stack{position:relative;width:40px;height:40px;flex:none;}
+  .logo-stack img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
+    transition:opacity .5s ease, transform .5s ease;
+  }
+  .logo-full{opacity:1;transform:scale(1);}
+  .logo-compact{opacity:0;transform:scale(0.85);}
+  header.scrolled .logo-full{opacity:0;transform:scale(1.1);}
+  header.scrolled .logo-compact{opacity:1;transform:scale(1);}
+  .mark-text{font-family:'Cormorant Garamond',serif;font-size:18px;letter-spacing:0.16em;font-weight:500;transition:opacity .4s ease, max-width .4s ease;overflow:hidden;white-space:nowrap;max-width:280px;}
+  .mark-text span.mark-rsyn{color:var(--bronze);font-weight:600;}
+  .mark-text span.mark-commercial{color:var(--ink);font-weight:400;}
+  header.scrolled .mark-text{opacity:0;max-width:0;}
+  header.scrolled .header-row{height:62px;}
+  .header-row{transition:height .3s ease;}
+  nav{display:flex;align-items:center;gap:36px;}
+  nav a{font-size:14px;color:var(--ink-dim);transition:color .25s;}
+  nav a:hover{color:var(--bronze);}
+  .nav-mobile-hide{display:flex;}
+  @media(max-width:760px){.nav-mobile-hide{display:none;}}
+
+  .bg-watermark{
+    position:fixed;top:-8%;right:-10%;width:624px;max-width:56vw;
+    opacity:0.05;pointer-events:none;z-index:0;
+    filter:brightness(1.4);
+    transform:rotate(-30deg);
+    transition:transform .25s linear;
+    will-change:transform;
+  }
+  @media(max-width:700px){.bg-watermark{width:416px;top:-4%;right:-22%;}}
+  .hero{
+    position:relative;
+    min-height:94vh;
+    display:flex;
+    overflow:hidden;
+    border-bottom:1px solid var(--line);
+  }
+  .hero-inner{
+    position:relative;z-index:3;
+    width:100%;
+    display:flex;flex-direction:column;justify-content:space-between;
+    padding-top:140px;padding-bottom:46px;
+  }
+  .hero-top{text-align:left;}
+  .hero-bottom-row{
+    display:flex;flex-direction:column;align-items:flex-start;
+    text-align:left;
+    gap:22px;
+  }
+  @media(max-width:700px){.hero-inner{padding-top:115px;padding-bottom:36px;}}
+  .hero-bg-video{
+    position:absolute;inset:0;z-index:1;
+    width:100%;height:100%;
+    object-fit:cover;
+  }
+  .hero-overlay{
+    position:absolute;inset:0;z-index:2;
+    background:linear-gradient(180deg,
+      rgba(13,18,24,0.72) 0%,
+      rgba(13,18,24,0.16) 26%,
+      rgba(13,18,24,0.10) 55%,
+      rgba(13,18,24,0.85) 100%);
+  }
+  h1{
+    font-family:'Cormorant Garamond',serif;
+    font-weight:600;
+    font-size:clamp(38px,5.4vw,46px);
+    line-height:1;
+    letter-spacing:0;
+    color:var(--ink);
+    position:relative;
+    text-align:left;
+    max-width:525px;
+    text-shadow:0 4px 28px rgba(0,0,0,0.55), 0 2px 10px rgba(0,0,0,0.5);
+    opacity:0;animation:rise .8s ease forwards .25s;
+  }
+  h1 .title-base{display:block;}
+  h1 .title-gold{
+    display:block;position:absolute;top:0;left:0;width:100%;
+    color:var(--bronze);
+    pointer-events:none;
+    -webkit-mask-image:radial-gradient(circle 150px at var(--mx,50%) var(--my,50%), black 0%, black 35%, transparent 72%);
+    mask-image:radial-gradient(circle 150px at var(--mx,50%) var(--my,50%), black 0%, black 35%, transparent 72%);
+    opacity:0;
+    transition:opacity .25s ease;
+  }
+  h1:hover .title-gold{opacity:1;}
+  .hero-sub{
+    margin-top:26px;
+    font-size:14.5px;
+    color:var(--ink-dim);
+    max-width:450px;
+    line-height:1.5;
+    opacity:0;animation:rise .8s ease forwards .4s;
+  }
+  .hero-cta{
+    display:flex;gap:18px;align-items:center;flex-wrap:wrap;
+    opacity:0;animation:rise .8s ease forwards .55s;
+  }
+  .btn-primary{
+    position:relative;
+    display:inline-block;
+    background:none;border:none;padding:0;
+    cursor:pointer;
+    font-family:'Plus Jakarta Sans',sans-serif;
+  }
+  .reveal-clip{
+    display:block;position:relative;overflow:hidden;
+    background:var(--bronze);
+    padding:16px 34px;
+    border-radius:4px;
+    isolation:isolate;
+  }
+  .reveal-spot{
+    position:absolute;left:0;top:0;
+    width:420px;height:420px;
+    border-radius:50%;
+    background:var(--bg-3);
+    transform:translate(-50%,-50%) scale(0);
+    transition:transform .5s cubic-bezier(.25,.46,.45,.94);
+    z-index:0;pointer-events:none;
+  }
+  .reveal-spot.active{transform:translate(-50%,-50%) scale(1);}
+  .reveal-text{
+    position:relative;z-index:1;display:inline-block;
+    color:var(--bg);
+    transition:color .35s ease;
+    font-size:14px;font-weight:700;letter-spacing:0.4px;
+  }
+  .reveal-text.spot-active{color:var(--bronze);}
+
+  @keyframes rise{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+
+  /* ---- section label ---- */
+  .sec-label{
+    font-size:13px;color:var(--bronze);
+    margin-bottom:16px;
+  }
+  .sec-head{
+    font-family:'Cormorant Garamond',serif;font-weight:600;
+    font-size:clamp(24px,2.6vw,32px);
+    max-width:560px;line-height:1.25;
+    color:var(--ink);
+  }
+  .sec-intro{color:var(--ink-dim);font-size:15.5px;max-width:520px;margin-top:14px;line-height:1.7;}
+
+  /* ---- divisions ---- */
+  .divisions{padding:96px 0;border-bottom:1px solid var(--line);}
+  .div-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:56px;flex-wrap:wrap;}
+  .div-list{border-top:1px solid var(--line);}
+  .div-item{
+    display:grid;grid-template-columns:220px 1fr;gap:40px;
+    padding:34px 0;border-bottom:1px solid var(--line);
+    border-left:1px solid transparent;
+    align-items:baseline;
+    transition:border-left-color .3s ease, padding-left .3s ease;
+  }
+  .div-item:hover{border-left-color:var(--bronze);padding-left:18px;}
+  @media(max-width:760px){.div-item{grid-template-columns:1fr;gap:10px;}}
+  .div-title{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:500;color:var(--ink);transition:color .3s ease;}
+  .div-item:hover .div-title{color:var(--bronze);}
+  .div-desc{color:var(--ink-dim);font-size:15px;max-width:560px;line-height:1.75;}
+
+  /* ---- corridors section ---- */
+  .corridors{padding:96px 0;border-bottom:1px solid var(--line);background:var(--bg-2);}
+  .route{
+    margin-top:60px;
+    display:grid;grid-template-columns:repeat(4,1fr);
+    position:relative;
+  }
+  @media(max-width:820px){.route{grid-template-columns:1fr;gap:34px;}}
+  .route::before{
+    content:'';position:absolute;top:9px;left:0;right:0;height:1px;
+    background:linear-gradient(90deg, transparent, var(--bronze-dim) 8%, var(--bronze-dim) 92%, transparent);
+    transform-origin:left center;
+    transform:scaleX(0);
+    transition:transform 1.3s cubic-bezier(.45,0,.15,1);
+  }
+  .route.in-view::before{transform:scaleX(1);}
+  @media(max-width:820px){.route::before{display:none;}}
+  .route-node{position:relative;padding-right:24px;}
+  .route-dot{
+    width:9px;height:9px;border-radius:50%;
+    background:var(--bg-2);border:1.5px solid var(--bronze);
+    margin-bottom:22px;position:relative;z-index:2;
+  }
+  .route-region{font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--ink);margin-bottom:8px;}
+  .route-desc{font-size:13.5px;color:var(--ink-faint);line-height:1.6;}
+
+  /* ---- philosophy ---- */
+  .philosophy{padding:100px 0;position:relative;overflow:hidden;}
+  .philosophy .wrap{position:relative;z-index:1;}
+  .phil-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:70px;position:relative;z-index:1;}
+  @media(max-width:860px){.phil-grid{grid-template-columns:1fr;gap:36px;}}
+  .phil-quote{
+    font-family:'Cormorant Garamond',serif;font-weight:600;
+    font-size:clamp(22px,2.4vw,29px);
+    line-height:1.35;color:var(--ink);
+  }
+  .phil-body p{color:var(--ink-dim);font-size:15.5px;line-height:1.8;margin-bottom:20px;max-width:520px;}
+  .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;}
+  .tag{
+    border:1px solid var(--line);color:var(--ink-dim);
+    font-size:13px;padding:8px 15px;border-radius:2px;
+    transition:border-color .3s ease, color .3s ease;
+  }
+  .tag:hover{border-color:var(--bronze-dim);color:var(--ink);}
+
+  /* ---- contact / footer ---- */
+  .contact{
+    padding:100px 0 60px;
+    border-top:1px solid var(--line);
+    background:var(--bg-3);
+  }
+  .contact-grid{
+    display:grid;grid-template-columns:1.2fr 0.8fr;gap:50px;
+    padding-bottom:60px;border-bottom:1px solid var(--line);
+  }
+  @media(max-width:820px){.contact-grid{grid-template-columns:1fr;gap:34px;}}
+  .contact-head{
+    font-family:'Cormorant Garamond',serif;font-weight:600;
+    font-size:clamp(26px,3vw,38px);line-height:1.2;color:var(--ink);max-width:480px;
+  }
+  .contact-email{
+    display:inline-flex;align-items:center;gap:10px;
+    margin-top:30px;font-size:16px;color:var(--bronze);
+    border-bottom:1px solid var(--bronze-dim);padding-bottom:4px;
+  }
+  .contact-side{font-size:14px;color:var(--ink-dim);line-height:2;}
+  .contact-side .label{color:var(--ink-faint);font-size:12.5px;display:block;margin-bottom:6px;}
+  .contact-side .block{margin-bottom:26px;}
+  footer{
+    display:flex;justify-content:space-between;align-items:center;
+    padding-top:28px;font-size:12.5px;color:var(--ink-faint);flex-wrap:wrap;gap:14px;
+  }
+</style>
+</head>
+<body>
+<img src="sphere.png" alt="" class="bg-watermark">
+
+<header>
+  <div class="wrap header-row">
+    <div class="mark">
+      <div class="logo-stack">
+        <img src="sphere-2-g.png" alt="RSYN" class="logo-full">
+        <img src="upscalemedia-R-g.png" alt="RSYN" class="logo-compact">
+      </div>
+      <div class="mark-text"><span class="mark-rsyn">RSYN</span> <span class="mark-commercial">COMMERCIAL</span></div>
+    </div>
+    <nav class="nav-mobile-hide">
+      <a href="#divisions">Core business</a>
+      <a href="#corridors">Routes &amp; Flows</a>
+      <a href="#about">About Us</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <video class="hero-bg-video" id="heroVideo" autoplay muted loop playsinline poster="bubble.webp" controlsList="nodownload noremoteplaybook" disablePictureInPicture oncontextmenu="return false;">
+    <source src="bubble.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-top">
+      <h1 id="heroTitle">
+        <span class="title-base">Connecting energy and trade across dynamic corridors.</span>
+        <span class="title-gold" aria-hidden="true">Connecting energy and trade across dynamic corridors.</span>
+      </h1>
+    </div>
+    <div class="hero-bottom-row">
+      <p class="hero-sub">Delivering petroleum products, petrochemicals, and cross-border commercial solutions with structural discipline, market precision, and strategic reach.</p>
+      <div class="hero-cta">
+        <a href="mailto:info@rsynae.com" class="btn-primary" id="revealBtn">
+          <span class="reveal-clip">
+            <span class="reveal-spot" id="revealSpot"></span>
+            <span class="reveal-text" id="revealText">Start a conversation</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="divisions" id="divisions">
+  <div class="wrap">
+    <div class="div-head">
+      <div>
+        <div class="sec-label">Core business</div>
+        <div class="sec-head">Three lines of trade, one commercial discipline.</div>
+      </div>
+      <p class="sec-intro">A lean structure built for institutional agility across physical and cross-border flows.</p>
+    </div>
+    <div class="div-list">
+      <div class="div-item">
+        <div class="div-title">Petroleum &amp; Energy Products</div>
+        <div class="div-desc">Strategic sourcing and supply of refined products and energy commodities, optimized through specialized logistics and agile risk management.</div>
+      </div>
+      <div class="div-item">
+        <div class="div-title">Petrochemicals &amp; Polymers</div>
+        <div class="div-desc">Reliable downstream distribution channels, connecting premier regional manufacturing hubs with active industrial end-markets.</div>
+      </div>
+      <div class="div-item">
+        <div class="div-title">Cross-Border General Trade</div>
+        <div class="div-desc">Commercial intelligence and trade finance mechanisms to orchestrate multi-sector commodity flows beyond primary energy.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="corridors" id="corridors">
+  <div class="wrap">
+    <div class="sec-label">Geographic reach</div>
+    <div class="sec-head">Four corridors, one continuous flow of trade.</div>
+    <p class="sec-intro">From sourcing hub to end-market, our network follows the routes where energy and commerce actually move.</p>
+    <div class="route">
+      <div class="route-node">
+        <div class="route-dot"></div>
+        <div class="route-region">Persian Gulf</div>
+        <div class="route-desc">Strategic sourcing and primary hub.</div>
+      </div>
+      <div class="route-node">
+        <div class="route-dot"></div>
+        <div class="route-region">Central Asia</div>
+        <div class="route-desc">Overland corridors and inland demand.</div>
+      </div>
+      <div class="route-node">
+        <div class="route-dot"></div>
+        <div class="route-region">East Asia</div>
+        <div class="route-desc">Industrial demand and downstream flows.</div>
+      </div>
+      <div class="route-node">
+        <div class="route-dot"></div>
+        <div class="route-region">Mediterranean</div>
+        <div class="route-desc">Transit corridor and market gateway.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="philosophy" id="about">
+  <div class="wrap">
+    <div class="sec-label">About Us</div>
+    <div class="phil-grid">
+    <div class="phil-quote">Disciplined execution. Long-term partnerships.</div>
+    <div class="phil-body">
+      <p>RSYN Commercial L.L.C. operates as an independent commodity trading firm anchored in the Persian Gulf. We focus on bridging vital trading hubs through sound commercial execution, regulatory compliance, and a resilient counterparty network.</p>
+      <p>Our lean structure allows institutional agility — ensuring secure physical flows and dependable trade solutions across high-growth international corridors.</p>
+      <div class="tags">
+        <div class="tag">Independent</div>
+        <div class="tag">Persian Gulf anchored</div>
+        <div class="tag">Counterparty discipline</div>
+        <div class="tag">Institutional agility</div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <div class="sec-label">Institutional desk</div>
+        <div class="contact-head">Establishing trust in international trade, across every corridor we serve.</div>
+        <a href="mailto:info@rsynae.com" class="contact-email">info@rsynae.com →</a>
+      </div>
+      <div class="contact-side">
+        <div class="block">
+          <span class="label">Regions served</span>
+          Persian Gulf · East Asia · Mediterranean · Central Asia
+        </div>
+        <div class="block">
+          <span class="label">Company</span>
+          RSYN Commercial L.L.C.
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>© RSYN Commercial L.L.C. All rights reserved.</div>
+      <div>Trade Execution &amp; Energy Distribution</div>
+    </footer>
+  </div>
+</section>
+
+<script>
+  // Right-click disabled on the hero video only — devtools stay usable for the rest of the site.
+  const heroVideo = document.getElementById('heroVideo');
+  if (heroVideo) {
+    const blockMenu = (e) => { e.preventDefault(); e.stopPropagation(); return false; };
+    heroVideo.addEventListener('contextmenu', blockMenu, true);
+    const videoWrap = heroVideo.closest('.hero');
+    if (videoWrap) videoWrap.addEventListener('contextmenu', (e) => {
+      if (e.target === heroVideo || heroVideo.contains(e.target)) blockMenu(e);
+    }, true);
+  }
+
+  const header = document.querySelector('header');
+  const bgWatermark = document.querySelector('.bg-watermark');
+  const onScroll = () => {
+    if (window.scrollY > 40) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+    if (bgWatermark) {
+      const START_DEG = -30;
+      const END_DEG = 30;
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = scrollable > 0 ? Math.min(1, Math.max(0, window.scrollY / scrollable)) : 0;
+      const deg = START_DEG + progress * (END_DEG - START_DEG);
+      bgWatermark.style.transform = `rotate(${deg}deg)`;
+    }
+  };
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  const heroTitle = document.getElementById('heroTitle');
+  if (heroTitle) {
+    heroTitle.addEventListener('mousemove', (e) => {
+      const rect = heroTitle.getBoundingClientRect();
+      heroTitle.style.setProperty('--mx', (e.clientX - rect.left) + 'px');
+      heroTitle.style.setProperty('--my', (e.clientY - rect.top) + 'px');
+    });
+  }
+
+  const routeEl = document.querySelector('.route');
+  if (routeEl && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          routeEl.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.35});
+    io.observe(routeEl);
+  }
+
+  const revealBtn = document.getElementById('revealBtn');
+  const revealSpot = document.getElementById('revealSpot');
+  const revealText = document.getElementById('revealText');
+  if (revealBtn) {
+    const setSpot = (e) => {
+      const rect = revealBtn.getBoundingClientRect();
+      revealSpot.style.left = (e.clientX - rect.left) + 'px';
+      revealSpot.style.top = (e.clientY - rect.top) + 'px';
+    };
+    revealBtn.addEventListener('mouseenter', (e) => {
+      setSpot(e);
+      revealSpot.classList.add('active');
+      revealText.classList.add('spot-active');
+    });
+    revealBtn.addEventListener('mouseleave', (e) => {
+      setSpot(e);
+      revealSpot.classList.remove('active');
+      revealText.classList.remove('spot-active');
+    });
+  }
+</script>
+</body>
+</html>
